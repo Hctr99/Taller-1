@@ -1,0 +1,24 @@
+# Taller-1
+import java.util.Random;
+public class Carrito {
+    public static void main(String[] args){
+        arreglo()
+    }
+    public static void arreglo(){
+        Random numr=new Random();//numr hace referencia a un numero ramdom
+        int lar = numr.nextInt(20)+1; //lar hace referencia a largo arreglo
+        int arreglo[] = new int[lar];
+        int acumulador=500;
+        int agregar=150;
+        for (int i=0;i<lar;i++){
+
+            acumulador=acumulador+agregar;
+            arreglo[i]=acumulador;
+        }
+        System.out.println(lar);
+        for (int i=0;i<lar;i++) {
+            System.out.println(arreglo[i]);
+        }
+    }
+
+}
